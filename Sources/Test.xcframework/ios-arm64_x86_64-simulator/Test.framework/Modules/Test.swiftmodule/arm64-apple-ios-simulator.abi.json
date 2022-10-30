@@ -16,41 +16,259 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Test",
-        "printedName": "Test",
+        "name": "TestUser",
+        "printedName": "TestUser",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TestUser",
+                "printedName": "Test.TestUser",
+                "usr": "s:4Test0A4UserV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Test0A4UserV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Test0A4UserV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Test",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:4Test0A4UserV",
+        "mangledName": "$s4Test0A4UserV",
+        "moduleName": "Test",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FastQADelegate",
+        "printedName": "FastQADelegate",
         "children": [
           {
             "kind": "Function",
-            "name": "hello",
-            "printedName": "hello()",
+            "name": "fastQA",
+            "printedName": "fastQA(_:didSelectUserWith:and:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FastQA",
+                "printedName": "Test.FastQA",
+                "usr": "s:4Test6FastQAC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:4TestAAC5helloyyF",
-            "mangledName": "$s4TestAAC5helloyyF",
+            "usr": "s:4Test14FastQADelegateP6fastQA_17didSelectUserWith3andyAA0bE0C_S2StF",
+            "mangledName": "$s4Test14FastQADelegateP6fastQA_17didSelectUserWith3andyAA0bE0C_S2StF",
             "moduleName": "Test",
+            "genericSig": "<τ_0_0 where τ_0_0 : Test.FastQADelegate>",
+            "sugared_genericSig": "<Self where Self : Test.FastQADelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:4Test14FastQADelegateP",
+        "mangledName": "$s4Test14FastQADelegateP",
+        "moduleName": "Test",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FastQA",
+        "printedName": "FastQA",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Test.FastQADelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FastQADelegate",
+                    "printedName": "Test.FastQADelegate",
+                    "usr": "s:4Test14FastQADelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Test6FastQAC10initialize4with8delegateySS_AA0B10QADelegate_pSgtFZ",
+            "mangledName": "$s4Test6FastQAC10initialize4with8delegateySS_AA0B10QADelegate_pSgtFZ",
+            "moduleName": "Test",
+            "static": true,
             "declAttributes": [
-              "AccessControl"
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:4TestAAC",
-        "mangledName": "$s4TestAAC",
+        "usr": "s:4Test6FastQAC",
+        "mangledName": "$s4Test6FastQAC",
         "moduleName": "Test",
         "declAttributes": [
+          "Final",
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Test"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Test",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yaman\/jdd-project-ios\/jdd-project-ios\/Sources\/Client.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 23,
+      "value": "\"http:\/\/localhost:3000\""
+    },
+    {
+      "filePath": "\/Users\/yaman\/jdd-project-ios\/jdd-project-ios\/Sources\/Client.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 17,
+      "value": "\"\/sdk\/test-users\""
+    },
+    {
+      "filePath": "\/Users\/yaman\/jdd-project-ios\/jdd-project-ios\/Sources\/Client.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 17,
+      "value": "\"\/sdk\/test-users\""
+    }
+  ]
 }

@@ -4,9 +4,17 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import Swift
+import SwiftUI
+import UIKit
 import _Concurrency
 import _StringProcessing
-@_hasMissingDesignatedInitializers public class Test {
-  public func hello()
+public struct TestUser : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol FastQADelegate : AnyObject {
+  func fastQA(_ fastQA: Test.FastQA, didSelectUserWith email: Swift.String, and password: Swift.String)
+}
+@_hasMissingDesignatedInitializers final public class FastQA {
+  public static func initialize(with apiKey: Swift.String, delegate: Test.FastQADelegate? = nil)
   @objc deinit
 }
